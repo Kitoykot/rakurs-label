@@ -1,0 +1,408 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+img {
+	border:0;
+	margin:0;
+	padding:0;
+	float: left;
+}
+
+main {
+	background-color: #f9f9f950;
+}
+
+	
+.fixed-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#hamburger_line {
+	display: none;
+}
+
+#header {
+	border-bottom: 1px solid #bfbdbd;
+	height: 90px;
+	font-size: 25px;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+}
+	#logo {
+		float: left;
+	}
+
+	.artists {
+		float: left;
+		position: relative;
+		top: 30px;
+		left: 30px;
+	}
+
+	.about_us {
+		position: relative;
+		top: 30px;
+		float: left;
+		margin-left: 350px;
+		cursor: pointer;
+	}
+
+		.about_us:hover {
+			text-decoration: underline;
+		}
+
+	.videos {
+		float: right;
+		position: relative;
+		top: 30px;
+		cursor: pointer;
+	}
+
+		.videos:hover {
+			text-decoration: underline;
+		}
+
+	#hamburger_pic {
+		display: none;
+	}
+
+#flex-container {
+	padding-top: 130px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+	.flex-artists {
+		width: 200px;
+		padding-top: 10px;
+	}
+
+		.artist-22 {
+			padding-bottom: 30px;
+		}
+
+	.flex-discribe {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	#streaming {
+		padding-left: 25px;
+	}
+
+		#streaming img {
+			padding-top: 5px;
+		}
+
+		#yandex-str {
+			padding: 0 10px;
+		}
+
+
+#footer {
+	padding: 10px 0;
+	border-top: 1px solid #bfbdbd;
+}
+
+	#logo_footer {
+		padding-bottom: 10px;
+	}
+
+	#icons {
+		float: right;
+	}
+
+	#vk_logo {
+		margin-right: 10px;
+	}
+
+#popup_container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url('img/bg.png');
+	z-index: 10;
+	display: none;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+	#popup {
+		width: 40%;
+		height: 100%;
+		background-color: white;
+		padding: 20px;
+		margin: 10px auto;
+		overflow-y: scroll;
+		padding-bottom: 50px;
+	}
+
+	.flex_popup {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+		.flex_popup img {
+			margin-right: 10px;
+			max-width: 300px;
+		}
+
+	#popup_discribe {
+		text-align: center;
+	}
+
+	.flex_popup_mail {
+		margin-top: 10px;
+	}	
+
+	#mayak {
+		margin-top: 30px;
+	}
+
+	#kochetkova {
+		margin-bottom: 70px;
+	}
+
+	#cancel {
+		float: right;
+		max-width: 25px;
+		cursor: pointer;
+	}
+
+@media (max-width: 991px) {
+	#flex_container {
+		flex-direction: column;
+		align-content: center;
+		padding-left: 20px;
+	}
+	.artists {
+		display: none;
+	}
+	.about_us {
+		display: none;
+	}
+	.videos {
+		display: none;
+	}
+	#hamburger_pic {
+		display: block;
+		float: right;
+		padding-top: 15px;
+		cursor: pointer;
+	}
+	#mnu_cancel {
+		cursor: pointer;
+		max-width: 20px;
+	}
+	#hamburger_line {
+		display: none;
+		width: 100%;
+		height: 50px;
+		background-color: white;
+		border-bottom: 1px solid #bfbdbd;
+	}
+	#mnu {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 15px;
+	}
+	.mnu_about_us {
+		cursor: pointer;
+	}				
+}
+
+@media (max-width: 1285px) {
+
+	#flex-container {
+		padding-top: 30px;
+	}
+
+	#header {
+		position: static;
+	}	
+
+	.flex_popup_discribe {
+		width: 70%;
+	}
+	.flex_popup img {
+		padding-bottom: 5px;
+	}
+	#popup {
+		font-size: 14px;
+	}
+	#cancel {
+		max-width: 20px;
+	}
+	.header-main {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.fixed-container {
+		padding: 0 30px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.about_us {
+		margin-left: 330px;
+	}
+}
+
+@media (max-width: 1161px) {
+	.about_us {
+		margin-left: 300px;
+	}
+}
+
+@media (max-width: 1084px) {
+	#header {
+		font-size: 20px;
+		height: 70px;
+	}
+	#logo {
+		max-width: 100px;
+	}
+	.about_us {
+		margin-left: 280px;
+	}
+
+	#logo_footer {
+		max-width: 100px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	.artists {
+		display: none;
+	}
+	.about_us {
+		display: none;
+	}
+	.videos {
+		display: none;
+	}
+
+	#hamburger_pic {
+		display: block;
+		float: right;
+		padding-top: 15px;
+		cursor: pointer;
+	}
+	#mnu_cancel {
+		cursor: pointer;
+		max-width: 20px;
+	}
+	#hamburger_line {
+		display: block;
+		width: 100%;
+		height: 50px;
+		background-color: white;
+		border-bottom: 1px solid #bfbdbd;
+	}
+	#mnu {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 15px;
+	}
+	.mnu_about_us {
+		cursor: pointer;
+	}				
+}
+
+@media (max-width: 986px) {
+	.about_us {
+		margin-left: 100px;
+	}
+	.flex_popup img {
+		max-width: 250px;
+	}
+	#popup {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 639px) {
+	.artist-23, .artist-24, .artist-25 {
+		display: none;
+	}		
+}
+
+@media (max-width: 600px) {
+	.flex_popup img {
+		max-width: 200px;
+	}
+	.flex_popup {
+		padding-left: 0;
+	}
+	#cancel {
+		max-width: 15px;
+	}	
+}
+
+@media (max-width: 500px) {
+	#popup {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 470px) {
+	.flex_popup img {
+		max-width: 150px;
+	}
+	#cancel {
+		max-width: 10px;
+	}		
+}
+
+@media (max-width: 435px) {
+	#icons img {
+		max-width: 30px;
+	}
+	.header-main {
+		font-size: 18px;
+	}
+	#hamburger_line {
+		font-size: 14px;
+	}
+	#logo {
+		max-width: 70px;
+	}
+	#logo_footer {
+		max-width: 70px;
+	}
+	#header {
+		height: 50px;
+	}
+	#hamburger_pic {
+		padding-top: 10px;
+		width: 20px;
+	}
+	#mnu_cancel {
+		max-width: 15px;
+	}
+}
