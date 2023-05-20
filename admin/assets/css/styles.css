@@ -1,0 +1,64 @@
+body, html {
+	width: 100%;
+	margin: 0;
+	font-size: 16px;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	height: 50px;
+}
+
+a {
+	color: white;
+}
+
+	a:hover {
+		color: white;
+	}
+
+.nav-links
+{
+	display: flex;
+	gap: 40px;
+}
+
+td {
+	background-color: rgb(225, 212, 212);
+	border-top: 1px solid black;
+}
+
+td, th {
+	padding: 10px 20px;
+}
+
+table{
+	float: right;
+	margin-right: 50px;
+}
+
+textarea {
+	resize: none;
+}
+
+#title-table {
+	width: 350px;
+}
+
+#categories {
+	margin-left: 150px;
+	float: left;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
